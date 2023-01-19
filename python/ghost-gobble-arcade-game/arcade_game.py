@@ -1,6 +1,5 @@
 """Functions for implementing the rules of the classic arcade game Pac-Man."""
 
-
 def eat_ghost(power_pellet_active, touching_ghost):
     """Verify that Pac-Man can eat a ghost if he is empowered by a power pellet.
 
@@ -13,7 +12,6 @@ def eat_ghost(power_pellet_active, touching_ghost):
     
     return False
 
-
 def score(touching_power_pellet, touching_dot):
     """Verify that Pac-Man has scored when a power pellet or dot has been eaten.
 
@@ -24,7 +22,6 @@ def score(touching_power_pellet, touching_dot):
     if touching_power_pellet or touching_dot:
         return True
     return False
-
 
 def lose(power_pellet_active, touching_ghost):
     """Trigger the game loop to end (GAME OVER) when Pac-Man touches a ghost without his power pellet.
@@ -39,8 +36,8 @@ def lose(power_pellet_active, touching_ghost):
     return False
 
 def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
-    """Trigger the victory event when all dots have been eaten.
-
+    """Trigger the victory event when all dots have been eaten
+  
     :param has_eaten_all_dots: bool - has the player "eaten" all the dots?
     :param power_pellet_active: bool - does the player have an active power pellet?
     :param touching_ghost: bool - is the player touching a ghost?
