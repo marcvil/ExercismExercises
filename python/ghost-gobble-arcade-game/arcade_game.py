@@ -35,6 +35,7 @@ def lose(power_pellet_active, touching_ghost):
     
     return False
 
+
 def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
     """Trigger the victory event when all dots have been eaten
   
